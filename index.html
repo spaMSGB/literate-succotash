@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Test wowowow</title>
+    </head>
+    <body>
+        <p id = "yo"></p>
+        <script>
+            let x = 5;
+            document.getElementById("yo").innerHTML = 5;
+        </script>
+        <p><button type="button" onclick="dothis()">Button wowow</button></p>
+        <p id = "helpy"></p>
+        <p id = "button2"></p>
+        <script>
+            noh = 1;
+            function dothis(){
+                x = x + noh; 
+                document.getElementById('yo').innerHTML = x
+                document.getElementById("button2").innerHTML = ""
+                if (x >= 10 && x < 20){
+                    document.getElementById("yo").innerHTML += " great"
+                }
+                if (x > noh * 10){
+                    document.getElementById("yo").innerHTML += " wow"
+                    document.getElementById("button2").innerHTML = '<button type="button" onclick="helper()">Get helper</button>'
+                }
+            }
+            function helper(){
+                x = x-(noh * 10)
+                dothis()
+                noh += 1
+                document.getElementById("helpy").innerHTML = noh+" helpers";
+                document.getElementById()
+            }
+        </script>
+    </body>
